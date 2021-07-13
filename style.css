@@ -4,53 +4,33 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
-.container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    padding: 50px 55px;
-    width: 600px;
-    background-color: rgba(0,0,0,.7);
-    box-shadow: 0 0 10px rgba(255,255,255,.3);
+.clearing{
+	clear: both;
+}
+.content{
+	background-image: url(gym.jpg);
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
-.container fieldset{
-    padding: 30px 35px;
+table.table{
+	width: 50%;
+}
+table.table tr{
+	height: 35px;
+}
+table.table th{
+	width: 30%;
 }
 
-.container legend{
-    color:#fafafa;
-    font-size: xx-large;
-}
-
-.container p{
-    text-align: left;
-    color: #fafafa;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
-
-container p label a{
-    float: left;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 25px;
-    text-decoration: none;  
-     position: relative;
-}
-
-.container label{
-    text-align: left;
-    color: #90caf9;
-}
-
-.container button{
-    width: calc(100% - 20px);
-    padding: 4px 5px;
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 20px;
+.btn-form{
+	padding: 10px 15px;
+    margin-left: 290px;
+    margin-top: 10px;
+	border: none;
+	background: #FFFFFF;
+	cursor: pointer;
 }
