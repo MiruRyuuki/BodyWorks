@@ -12,7 +12,7 @@
 </header>
 
 <div id="content" class="content">
-<h1>Login</h1>
+<!-- <h1>Login</h1> -->
 <?php
 if(isset($_GET['err'])){
 	?>
@@ -21,19 +21,21 @@ if(isset($_GET['err'])){
 }
 ?>
 <form action="doLogin.php" method="post" id="form_login" name="form_login" onsubmit="return validate();">
-	<table class="table">
-		<tr>
-			<th align="left">Email</th>
-			<td><input type="text" name="email" value="" ></td>
-		</tr>
-		<tr>
-			<th align="left">Password</th>
-			<td><input type="password" name="password" value="" ></td>
-		</tr>
-		<tr>
-			<th colspan="2" align="left"><button type="submit" class="btn-form">Submit</button></td>
-		</tr>
-	</table>
+	<div class="form">
+		<table class="table">
+			<tr>
+				<th align="left">Email</th>
+				<td><input type="text" name="email" value="" ></td>
+			</tr>
+			<tr>
+				<th align="left">Password</th>
+				<td><input type="password" name="password" value="" ></td>
+			</tr>
+			<tr>
+				<th colspan="2" align="left"><button type="submit" class="btn-form">LOGIN</button></td>
+			</tr>
+		</table>
+	</div>
 </form>
 </div>
 </body>

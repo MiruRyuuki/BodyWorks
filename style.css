@@ -16,21 +16,44 @@
     background-size: 100%;
 }
 
+.form{
+	width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
 table.table{
-	width: 50%;
+    position: relative;
+    z-index: 1;
+    background: #3f3f3f;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 table.table tr{
-	height: 35px;
+	height: 45px;
+    color: #FFFFFF;
 }
+
 table.table th{
-	width: 30%;
+	width: 50%;
+    color: #FFFFFF;
 }
 
 .btn-form{
-	padding: 10px 15px;
-    margin-left: 290px;
-    margin-top: 10px;
-	border: none;
-	background: #FFFFFF;
-	cursor: pointer;
+	font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
 }
