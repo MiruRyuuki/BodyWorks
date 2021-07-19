@@ -2,7 +2,7 @@
 -- Table structure for table `students`
 --
 
-CREATE TABLE `students` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `fname` varchar(255) NOT NULL,
   `lname` varchar(255) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `fname`, `lname`, `email`, `password`, `username`, `gender`, `height`, `weight`) VALUES
+INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `username`, `gender`, `height`, `weight`) VALUES
 (1, 'Loly', 'Grande', 'lolyg@gmail.com', '5EB319F2B34565D65F4DB735DE522575', 'lolyg', 'Female', '165', '47');
 
 --
@@ -27,7 +27,7 @@ INSERT INTO `students` (`id`, `fname`, `lname`, `email`, `password`, `username`,
 
 -- Indexes for table `students`
 --
-ALTER TABLE `students`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -36,7 +36,7 @@ ALTER TABLE `students`
 --
 -- AUTO_INCREMENT for table `students`
 --
-ALTER TABLE `students`
+ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
