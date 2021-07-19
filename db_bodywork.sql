@@ -1,5 +1,5 @@
 --
--- Table structure for table `students`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -15,7 +15,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `students`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `username`, `gender`, `height`, `weight`) VALUES
@@ -25,7 +25,7 @@ INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `username`, `g
 -- Indexes for dumped tables
 --
 
--- Indexes for table `students`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
@@ -34,7 +34,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for dumped tables
 
 --
--- AUTO_INCREMENT for table `students`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
