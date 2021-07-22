@@ -1,5 +1,6 @@
 <?php 
 session_start();
+require("connection.php");
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -16,14 +17,14 @@ else if(empty($password)){
 
 else{
 
-	$sql = "SELECT * FROM students WHERE email = '$email' AND password = '".md5($password)."'";
+	$sql = "SELECT * FROM users WHERE email = '$email' AND password = '".md5($password)."'";
 	$result = mysqli_query($con, $sql);
 	$rowcount = mysqli_num_rows($result);
 	if($rowcount){
 		$row = $result->fetch_assoc();
 		$_SESSION['login'] = true;
-		$_SESSION['student_name'] = $row['name'];
-		$_SESSION['student_id'] = $row['id'];
+		$_SESSION['users_fname'] = $row['fname'];
+		$_SESSION['users_id'] = $row['id'];
 
 		header("location:index.php");
 		// die("User exist!");
