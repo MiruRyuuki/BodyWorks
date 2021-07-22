@@ -1,0 +1,33 @@
+.bg-profile100 {
+    width: 100%;  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+.mycontainer {
+    width: 100%;  
+    min-height: 100vh;
+  }
+
+.title {
+   position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.788);
+    max-width: 450px;
+    margin: 0 250px 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2), 0 5px 5px 0 rgba(255, 254, 254, 0.24);
+  }
+
+.profile {
+   position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.788);
+    max-width: 450px;
+    margin: 0 250px 10px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2), 0 5px 5px 0 rgba(255, 254, 254, 0.24);
+  }
