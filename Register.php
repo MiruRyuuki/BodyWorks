@@ -23,7 +23,7 @@ if(isset($_GET['msg'])){
 ?>
 
 <form action="doRegister.php" method="post" id="form_register" onsubmit="return validate();">
-<div class="form">
+	<div class="form">
 		<table class="table">
 			<tr>
 				<th align="left">First Name</td>
