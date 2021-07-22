@@ -1,10 +1,14 @@
 <?php 
+require("connection.php");
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$phone = $_POST['phone'];
+$username = $_POST['username'];
+$gender = $_POST['gender'];
+$height = $_POST['height'];
+$weight = $_POST['weight'];
 
 if(empty($fname)){
 	header("location:register.php?err=First Name is required!");
@@ -35,7 +39,7 @@ else if(empty($weight)){
 }
 else{
 
-	$sql = "INSERT INTO students (fname,lname,email,password,username,gender,height,weight)
+	$sql = "INSERT INTO users (fname,lname,email,password,username,gender,height,weight)
 	VALUES ('$fname','$lname','$email','".md5($password)."','$username', '$gender','$height', '$weight')";
 
 	if (mysqli_query($con, $sql)) {
