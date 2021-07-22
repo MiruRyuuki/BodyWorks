@@ -43,6 +43,16 @@ table.table th{
     color: #FFFFFF;
 }
 
+.warning{
+    background: red;
+    padding: 10px 5px;
+}
+
+.message{
+    background: green;
+    padding: 10px 5px;
+}
+
 .btn-form{
 	font-family: "Roboto", sans-serif;
     text-transform: uppercase;
